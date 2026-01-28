@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evander Duncan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+  <div class="left">
+    <div class="name">Evander Duncan</div>
+    <div class="location">b. 2000 Glasgow, currently based in London</div>
+  </div>
+
+  <div class="center">
+    <div class="about-label">About</div>
+
+    <div class="about-content">
+      <ul class="about-list">
+        <li>2025 MSc Creative Computing (UAL)</li>
+        <li>2023 BSc Digital Interaction Design (DJCAD)</li>
+      </ul>
+
+      <p class="about-description">
+        Recent Masters graduate working between physical computing and creative coding.
+        Developing projects using Arduino, Pi, p5.js, Unity, TouchDesigner,
+        and a range of digital fabrication software.
+      </p>
+    </div>
+  </div>
+
+  <div id="time"></div>
+</header>
+
+
+  <footer class="contact">
+  <div class="contact-label">Contact</div>
+  <div class="contact-detail">evanderduncan.work@gmail.com</div>
+  <div class="contact-detail">Instagram @ evanderduncan</div>
+</footer>
+
+  <!-- Reel -->
+  <main class="reel-wrapper">
+    <div class="reel" id="reel"></div>
+  </main>
+
+  <!-- Popup Overlay -->
+  <div id="overlay" class="overlay">
+    <div class="popup">
+
+      <div class="popup-header">
+        <h1 id="popup-title"></h1>
+
+        <div class="header-left">
+          <p id="popup-description"></p>
+          <div id="popup-details" class="header-details"></div>
+        </div>
+
+        <button class="close" onclick="closePopup()">✕</button>
+
+      </div>
+
+      <div class="popup-body">
+        <div class="popup-images" id="popup-images"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

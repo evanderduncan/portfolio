@@ -1,0 +1,263 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  padding: 24px;
+  z-index: 10;
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.location {
+  font-size: 12px;
+  margin-top: 4px;
+  opacity: 0.6;
+}
+
+/* CENTER (About column) */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* keep left aligned */
+  width: 460px;             /* fixed width to match contact */
+  margin: 0 auto;           /* keep it near middle */
+}
+
+.about-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about-content {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.45;
+  opacity: 0.6;
+}
+
+.about-list {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.about-list li {
+  margin-bottom: 4px;
+}
+
+/* RIGHT */
+#time {
+  font-size: 12px;
+}
+
+.contact {
+  position: fixed;
+  bottom: 24px;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 460px; /* MATCHES the About width */
+  text-align: left; /* aligns like About */
+  z-index: 10;
+}
+
+.contact-label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.contact-detail {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 4px;
+}
+
+.reel-wrapper {
+  position: fixed;
+  bottom: 160px; /* lifts it above contact details */
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.reel {
+  display: flex;
+  align-items: flex-end; /* align items to the same bottom edge*/
+  gap: 20px; /* images packed together */
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  padding: 0 24px;
+}
+
+.reel.paused {
+  animation-play-state: paused;
+}
+
+.reel-item {
+  flex: 0 0 auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* push image + title to bottom */
+
+  /*outline: 1px solid red;*/
+}
+
+.reel-item.size-small { width: 110px; }
+.reel-item.size-medium { width: 140px; }
+.reel-item.size-large { width: 180px; }
+
+.reel-item img {
+  width: 100%;
+  max-height: 300px; /* preserve natural height */
+  display: block;
+}
+
+.reel-item p {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity:0.8;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- Overlay / popup ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.96);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+  z-index: 20;
+  overflow-y: auto;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.popup {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 20px 24px 34px;
+  background: whitesmoke;
+}
+
+/* Header grid */
+.popup-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 32px;
+  margin-bottom: 32px;
+}
+
+.popup-header h1 {
+  grid-column: 1 / -1;
+  font-size: 20px;
+}
+
+.popup-header p {
+  grid-column: 1 / 2;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* place details at bottom of column 1 */
+.popup-header .header-details {
+  grid-column: 1 / 2;
+  align-self: end; /* pushes it to bottom of the first column */
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.popup-header .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ================= POPUP BODY LAYOUT ================= */
+
+.popup-body {
+  display: block;
+}
+
+.popup-images {
+  display: flex;
+  flex-direction: column;
+  gap: 36px; /* spacing BETWEEN images */
+}
+
+/* one row = text left | media right */
+.media-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: end; /* bottom-align caption + image */
+}
+
+/* LEFT COLUMN — caption */
+.media-text {
+  justify-self: start;        /* push text toward center line */
+  align-self: end;          /* sit at bottom of box */
+  padding-right: 10px;      /* space from center line */
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* RIGHT COLUMN — media container */
+.media-media {
+  justify-self: start;      /* start at center line */
+  padding-left: 10px;       /* space from center line */
+  display: flex;
+  align-items: flex-end;    /* media sits on bottom */
+}
+
+/* actual media sizing */
+.media-media img,
+.media-media video {
+  width: 100%;               /* 2/3 of column */
+  height: auto;
+  display: block;
+  gap: 10px;
+}
+
