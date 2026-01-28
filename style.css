@@ -250,4 +250,110 @@ body {
   aspect-ratio: 16 / 9;
 }
 
+@media (max-width: 768px) {
+
+  /* ---------- Base ---------- */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ---------- Top bar ---------- */
+  .top-bar {
+    position: static;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .center {
+    width: 100%;
+    margin: 0;
+  }
+
+  #time {
+    display: none;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 16px;
+    margin-top: 40px;
+  }
+
+  /* ---------- Reel ---------- */
+  .reel-wrapper {
+    position: static;
+    margin: 24px 0;
+    overflow-x: auto;
+  }
+
+  .reel {
+    animation: none; /* stop marquee on mobile */
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .reel-item {
+    min-width: 160px;
+  }
+
+  /* ---------- Popup ---------- */
+  .overlay {
+    background: #fff;
+  }
+
+  .popup {
+    margin: 0;
+    max-width: none;
+    min-height: 100vh;
+    padding: 16px;
+  }
+
+  .popup-header {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .popup-header h1 {
+    font-size: 18px;
+  }
+
+  .popup-header p {
+    font-size: 13px;
+  }
+
+  .popup-header .header-details {
+    font-size: 12px;
+  }
+
+  .popup-header .close {
+    font-size: 24px;
+    top: 8px;
+    right: 8px;
+  }
+
+  /* ---------- Media layout ---------- */
+  .media-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .media-media {
+    padding-left: 0;
+  }
+
+  .media-text {
+    padding-right: 0;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .media-media img,
+  .media-media iframe {
+    max-height: 60vh;
+  }
+}
 
