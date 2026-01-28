@@ -23,7 +23,7 @@ const projects = [
   details: 
     "The installation uses a webcam and TouchDesigner body-tracking to detect the participant’s form in real time. This data is translated into movement across a 7×7 grid of servo motors controlled by Arduino. Each servo presses into a stretched fabric membrane, creating a physical impression that mirrors the viewer’s body.\n\nThe work draws on the myth of Echo and Narcissus, reframing it through contemporary systems of self-representation such as surveillance, selfies, and feedback loops. While the interaction is playful, the delayed and imperfect reflection introduces a sense of unease, questioning the desire to recognise oneself through mediated images.",
 
-  cover: "assets/project-1-Echo/cover.png",
+  cover: "assets/project-1-Echo/cover.jpg",
 
   size: "large",
 
@@ -70,7 +70,8 @@ const projects = [
       { type: "image", src: "assets/project-3-TeleGate/image-2.png" },
       { type: "image", src: "assets/project-3-TeleGate/image-5.jpg" },
       { type: "image", src: "assets/project-3-TeleGate/image-1.jpg" },
-      { type: "youtube",
+      { 
+        type: "youtube", 
         src: "https://www.youtube.com/embed/iGIVuKx8k0A",
         text: "Final project video detailing the process of Tele-Gate."
       }
@@ -124,7 +125,9 @@ const projects = [
       { type: "image", src: "assets/project-8-3DWave/image-1.jpg" },
       { type: "image", src: "assets/project-8-3DWave/image-2.jpg" },
       { type: "image", src: "assets/project-8-3DWave/3dwavephysical.png" },
-      { type: "youtube", src: "https://wwww.youtube.com/embed/qjEpmbi9M1Y"}
+      { 
+        type: "youtube",  
+        src: "https://wwww.youtube.com/embed/qjEpmbi9M1Y"}
     ]
   },
   {
@@ -135,6 +138,10 @@ const projects = [
       { type: "image", src: "assets/project-9-CAPTCHR/image-1.jpg" },
       { type: "image", src: "assets/project-9-CAPTCHR/image-2.jpg" }
     ]
+  }
+  {
+    title: "Wireframe",
+    description: "Stylised forms generated through randomising grids and softening effects. Born from my background in Interaction Design, and interest in UX as an artistic medium as opposed to consumer product. A series of digital interface sketches led to an interest in abstracting the practical forms of wireframing."
   }
 ];
 
@@ -178,6 +185,8 @@ function openPopup(index) {
     const media = document.createElement("div");
     media.className = "media-media";
 
+    //for image
+
     if (item.type === "image") {
       const img = document.createElement("img");
       img.src = item.src;
@@ -185,18 +194,16 @@ function openPopup(index) {
       media.appendChild(img);
     }
 
-    if (item.type === "video") {
-      const video = document.createElement("video");
-      video.controls = true;
-      video.playsInline = true;
-      video.preload = "metadata";
+    // YOUTUBE VIDEO
+    if (item.type === "youtube") {
+      const iframe = document.createElement("iframe");
+    iframe.src = item.src;
+    iframe.loading = "lazy";
+    iframe.allow =
+     "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
 
-      const source = document.createElement("source");
-      source.src = item.src;
-      source.type = "video/mp4";
-
-      video.appendChild(source);
-      media.appendChild(video);
+    media.appendChild(iframe);
     }
 
     row.appendChild(text);

@@ -252,12 +252,9 @@ body {
   align-items: flex-end;    /* media sits on bottom */
 }
 
-/* actual media sizing */
 .media-media img,
-.media-media video {
-  width: 100%;               /* 2/3 of column */
-  height: auto;
+.media-media iframe {
+  width: 100%;
   display: block;
-  gap: 10px;
 }
 
