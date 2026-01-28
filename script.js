@@ -32,18 +32,23 @@ const projects = [
       src: "https://www.youtube.com/embed/c95ddDC2qn0" },
     { type: "youtube", 
       src: "https://www.youtube.com/embed/z2Jc7jUT0po" },
-    { type: "image", src: "assets/project-1-Echo/image-1.png" }
+    { type: "image", src: "assets/project-1-Echo/image-1.jpg" }
   ]
 },
   {
   title: "Wind Rhythms",
   description: "A study into remixing, a process of combining interesting elements of other people's projects. Wind Rhythms combines the mathethmatical patterns of hermonographs and the natural mark making of Tim Knowles Wind Drawings. The repetitive yet unpredictable movement is both mechanical and natural, resulting in organic and intentional mark making. ",
   details: "Arduino Uno, ultrasonic sensor, plywood, willow tree twig, charcoal.",
-  cover: "assets/project-2-Hermonograph/cover.png",
+  cover: "assets/project-2-Hermonograph/cover.jpg",
   media: [
   {
     type: "image",
-    src: "assets/project-2-Hermonograph/image-2.png",
+    src: "assets/project-2-Hermonograph/image-1.jpg",
+    text: "Live drawing generated through oscillatory motion."
+  },
+  {
+    type: "image",
+    src: "assets/project-2-Hermonograph/image-2.jpg",
     text: "Live drawing generated through oscillatory motion."
   },
   {
@@ -58,16 +63,16 @@ const projects = [
   {
     title: "Tele-Gate",
     description: "Thesis project.",
-    cover: "assets/project-3-TeleGate/cover.png",
+    cover: "assets/project-3-TeleGate/cover.jpg",
     media: [
-      { type: "image", src: "assets/project-3-TeleGate/image-1.png" },
-      { type: "image", src: "assets/project-3-TeleGate/image-2.png" },
       { type: "image", src: "assets/project-3-TeleGate/image-3.png" },
-      { type: "image", src: "assets/project-3-TeleGate/image-4.png" },
       { type: "image", src: "assets/project-3-TeleGate/image-5.png" },
+      { type: "image", src: "assets/project-3-TeleGate/image-2.png" },
+      { type: "image", src: "assets/project-3-TeleGate/image-5.jpg" },
+      { type: "image", src: "assets/project-3-TeleGate/image-1.jpg" },
       { type: "youtube",
         src: "https://www.youtube.com/embed/iGIVuKx8k0A",
-        text: "The harmonograph adapted to hold a natural willow branch."
+        text: "Final project video detailing the process of Tele-Gate."
       }
     ]
   }
@@ -75,53 +80,60 @@ const projects = [
   {
     title: "Icons Made Without Hands",
     description: "A series of computational paintings I made exploring the .",
-    cover: "assets/project-4-IconsMadeWithoutHands/cover.png",
+    cover: "assets/project-4-IconsMadeWithoutHands/cover.jpg",
     media: [
-      { type: "image", src: "assets/project-4-IconsMadeWithoutHands/image-1.png" },
-      { type: "image", src: "assets/project-4-IconsMadeWithoutHands/image-2.png" },
-      { type: "video", src: "assets/project-4-IconsMadeWithoutHands/video-1.mp4" },
+      { type: "image", src: "assets/project-4-IconsMadeWithoutHands/image-1.jpg" },
+      { type: "image", src: "assets/project-4-IconsMadeWithoutHands/image-2.jpg" },
+      { 
+        type: "youtube", 
+        src: "https://www.youtube.com/embed/E_h7W3oHJxc"   
+      }
     ]
   },
   {
     title: "MDF_Bark",
     description: "Laser etching of tree bark onto MDF.",
-    cover: "assets/project-5-MDFBark/cover.png",
+    cover: "assets/project-5-MDFBark/cover.jpg",
     size: "small",
-    media: [{ type: "image", src: "assets/project-5-MDFBark/image-1.png" }]
+    media: [{ type: "image", src: "assets/project-5-MDFBark/image-1.jpg" }]
   },
   {
     title: "Plus",
     description: "Short description of Project Six.",
-    cover: "assets/project-6-PlusFilter/cover.png",
+    cover: "assets/project-6-PlusFilter/cover.jpg",
     size: "large",
     media: [
-      { type: "image", src: "assets/project-6-PlusFilter/image-1.png" },
-      { type: "image", src: "assets/project-6-PlusFilter/image-2.png" }
+      { type: "image", src: "assets/project-6-PlusFilter/image-1.jpg" },
+      { type: "image", src: "assets/project-6-PlusFilter/image-2.jpg" }
     ]
   },
   {
     title: "Live Piano",
     description: "Short description of Project Seven.",
-    cover: "assets/project-7-Piano/cover.png",
-    media: [{ type: "video", src: "assets/project-7-Piano/video-1.mp4" }]
+    cover: "assets/project-7-Piano/cover.jpg",
+    media: [
+      { type: "youtube", 
+        src: "https://www.youtube.com/embed/Ff0GKf3-MKo" 
+      }]
   },
   {
     title: "3D Wave",
     description: "Short description of 3D wave.",
     cover: "assets/project-8-3DWave/cover.png",
     media: [
-      { type: "image", src: "assets/project-8-3DWave/image-1.png" },
-      { type: "image", src: "assets/project-8-3DWave/image-2.png" },
-      { type: "video", src: "assets/project-8-3DWave/video-1.mp4" }
+      { type: "image", src: "assets/project-8-3DWave/image-1.jpg" },
+      { type: "image", src: "assets/project-8-3DWave/image-2.jpg" },
+      { type: "image", src: "assets/project-8-3DWave/3dwavephysical.png" },
+      { type: "youtube", src: "https://wwww.youtube.com/embed/qjEpmbi9M1Y"}
     ]
   },
   {
     title: "CAPTCHR",
     description: "Short description of CAPTCHR.",
-    cover: "assets/project-9-CAPTCHR/cover.png",
+    cover: "assets/project-9-CAPTCHR/cover.jpg",
     media: [
-      { type: "image", src: "assets/project-9-CAPTCHR/image-1.png" },
-      { type: "image", src: "assets/project-9-CAPTCHR/image-2.png" }
+      { type: "image", src: "assets/project-9-CAPTCHR/image-1.jpg" },
+      { type: "image", src: "assets/project-9-CAPTCHR/image-2.jpg" }
     ]
   }
 ];
