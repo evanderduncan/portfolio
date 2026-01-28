@@ -136,12 +136,21 @@ const projects = [
     cover: "assets/project-9-CAPTCHR/cover.jpg",
     media: [
       { type: "image", src: "assets/project-9-CAPTCHR/image-1.jpg" },
-      { type: "image", src: "assets/project-9-CAPTCHR/image-2.jpg" }
+      { type: "image", src: "assets/project-9-CAPTCHR/image-2.jpg" },
+      { type: "youtube", src: "https://wwww.youtube.com/embed/11IoP0gwpVc " }
     ]
-  }
+  },
   {
     title: "Wireframe",
-    description: "Stylised forms generated through randomising grids and softening effects. Born from my background in Interaction Design, and interest in UX as an artistic medium as opposed to consumer product. A series of digital interface sketches led to an interest in abstracting the practical forms of wireframing."
+    description: "Stylised forms generated through randomising grids and softening effects. Born from my background in Interaction Design, and interest in UX as an artistic medium as opposed to consumer product. A series of digital interface sketches led to an interest in abstracting the practical forms of wireframing.",
+    cover: "assets/project-10-Wireframes/cover.jpg",
+    media: [
+      { type: "image", src: "assets/project-10/Wireframes/image-1.jpg" },
+      { type: "image", src: "assets/project-10/Wireframes/image-2.jpg" },
+      { type: "image", src: "assets/project-10/Wireframes/image-3.jpg" },
+      { type: "image", src: "assets/project-10/Wireframes/image-4.jpg" },
+      { type: "image", src: "assets/project-10/Wireframes/image-5.jpg" }
+    ]
   }
 ];
 
