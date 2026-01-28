@@ -113,6 +113,8 @@ const projects = [
     description: "Short description of Project Seven.",
     cover: "assets/project-7-Piano/cover.jpg",
     media: [
+      { type: "image", src: "assets/project-7-Piano/image-1.jpg" },
+      { type: "image", src: "assets/project-7-Piano/image-2.jpg" },
       { type: "youtube", 
         src: "https://www.youtube.com/embed/Ff0GKf3-MKo" 
       }]
