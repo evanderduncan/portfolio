@@ -110,7 +110,7 @@ const projects = [
   },
   {
     title: "Live Piano",
-    description: "Short description of Project Seven.",
+    description: "Live Piano works through a presourced public database such as weather or sealevel, the varying data values drive according motors, activating the piano hammers that make contact with a row of piazo sensors -each with their own assigned chord. The sound generated from the Live Piano is a direct audio representation of data.",
     cover: "assets/project-7-Piano/cover.jpg",
     media: [
       { type: "image", src: "assets/project-7-Piano/image-1.jpg" },
