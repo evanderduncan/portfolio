@@ -118,8 +118,20 @@ const projects = [
       }]
   },
   {
+    title: "Wireframe",
+    description: "Stylised forms generated through randomising grids and softening effects. Born from my background in Interaction Design, and interest in UX as an artistic medium as opposed to consumer product. A series of digital interface sketches led to an interest in abstracting the practical forms of wireframing.",
+    cover: "assets/project-10-Wireframes/cover.jpg",
+    media: [
+      { type: "image", src: "assets/project-10-Wireframes/image-1.jpg" },
+      { type: "image", src: "assets/project-10-Wireframes/image-2.jpg" },
+      { type: "image", src: "assets/project-10-Wireframes/image-3.jpg" },
+      { type: "image", src: "assets/project-10-Wireframes/image-4.jpg" },
+      { type: "image", src: "assets/project-10-Wireframes/image-5.jpg" }
+    ]
+  },
+  {
     title: "3D Wave",
-    description: "Short description of 3D wave.",
+    description: "An exploration into computational mixed media study, a process that takes a digital recorded humam wave, and through a series of softwares, developed the recorded motion into a 3D printed sculpture.",
     cover: "assets/project-8-3DWave/cover.png",
     media: [
       { type: "image", src: "assets/project-8-3DWave/image-1.jpg" },
@@ -132,24 +144,12 @@ const projects = [
   },
   {
     title: "CAPTCHR",
-    description: "Short description of CAPTCHR.",
+    description: "Inspired by the WebArt scene and hyperlink storytelling, I developed CAPTCHR, my final year Bachelor project which explores the changing relationship between humans and computers.",
     cover: "assets/project-9-CAPTCHR/cover.jpg",
     media: [
       { type: "image", src: "assets/project-9-CAPTCHR/image-1.jpg" },
       { type: "image", src: "assets/project-9-CAPTCHR/image-2.jpg" },
       { type: "youtube", src: "https://wwww.youtube.com/embed/11IoP0gwpVc " }
-    ]
-  },
-  {
-    title: "Wireframe",
-    description: "Stylised forms generated through randomising grids and softening effects. Born from my background in Interaction Design, and interest in UX as an artistic medium as opposed to consumer product. A series of digital interface sketches led to an interest in abstracting the practical forms of wireframing.",
-    cover: "assets/project-10-Wireframes/cover.jpg",
-    media: [
-      { type: "image", src: "assets/project-10/Wireframes/image-1.jpg" },
-      { type: "image", src: "assets/project-10/Wireframes/image-2.jpg" },
-      { type: "image", src: "assets/project-10/Wireframes/image-3.jpg" },
-      { type: "image", src: "assets/project-10/Wireframes/image-4.jpg" },
-      { type: "image", src: "assets/project-10/Wireframes/image-5.jpg" }
     ]
   }
 ];
