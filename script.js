@@ -60,6 +60,7 @@ const projects = [
     src: "https://www.youtube.com/embed/UzzjpWk_ju0",
     text: "The harmonograph adapted to hold a natural willow branch."
   }
+]
 },
 
   {
