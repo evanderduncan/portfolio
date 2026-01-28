@@ -41,7 +41,7 @@ const projects = [
 
   {
   title: "Wind Rhythms",
-  description: "A study into remixing, a process of combining interesting elements of other people's projects. Wind Rhythms combines the mathethmatical patterns of hermonographs and the natural mark making of Tim Knowles Wind Drawings. The repetitive yet unpredictable movement is both mechanical and natural, resulting in organic and intentional mark making. ",
+  description: "A study into remixing, a process of combining interesting elements of other people's projects. Wind Rhythms combines the mathematical patterns of harmonographs and the natural mark making of Tim Knowles Wind Drawings. The repetitive yet unpredictable movement is both mechanical and natural, resulting in organic and intentional mark making. ",
   details: "Arduino Uno, ultrasonic sensor, plywood, willow tree twig, charcoal.",
   cover: "assets/project-2-Hermonograph/cover.jpg",
   media: [
