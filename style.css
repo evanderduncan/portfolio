@@ -255,14 +255,20 @@ body {
   /* ---------- Base ---------- */
   body {
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
-  /* ---------- Top bar ---------- */
+  /* ---------- Top bar / About ---------- */
   .top-bar {
     position: static;
-    grid-template-columns: 1fr;
-    gap: 16px;
+    display: block;
     padding: 16px;
+    order: 1;
+  }
+
+  .left {
+    margin-bottom: 16px;
   }
 
   .center {
@@ -274,30 +280,46 @@ body {
     display: none;
   }
 
-  /* ---------- Contact ---------- */
-  .contact {
-    position: static;
-    transform: none;
-    width: 100%;
-    padding: 16px;
-    margin-top: 40px;
-  }
-
   /* ---------- Reel ---------- */
   .reel-wrapper {
     position: static;
-    margin: 24px 0;
+    order: 2;
+    margin: 32px 0;
     overflow-x: auto;
   }
 
   .reel {
-    animation: none; /* stop marquee on mobile */
+    animation: none; /* stop marquee */
     gap: 16px;
     padding: 0 16px;
+    align-items: flex-end;
   }
 
   .reel-item {
-    min-width: 160px;
+    width: auto;
+  }
+
+  .reel-item img {
+    height: 180px;       /* FIX stretch */
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .reel-item p {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  /* ---------- Contact (bottom anchor) ---------- */
+  .contact {
+    position: static;
+    order: 3;
+    width: 100%;
+    transform: none;
+    padding: 24px 16px;
+    margin-top: 48px;
+    border-top: 1px solid #ddd;
   }
 
   /* ---------- Popup ---------- */
@@ -355,5 +377,6 @@ body {
   .media-media iframe {
     max-height: 60vh;
   }
+
 }
 
