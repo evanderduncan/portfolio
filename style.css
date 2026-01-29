@@ -234,6 +234,7 @@ body {
 }
 
 .media-media {
+  width: 100%;
   justify-self: start;
   padding-left: 10px;
   display: flex;
@@ -243,7 +244,14 @@ body {
 .media-media img,
 .media-media iframe {
   width: 100%;
+  height: auto;
   display: block;
+
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+  background: transparent;
+  transform: none !important;
 }
 
 .media-media iframe {
