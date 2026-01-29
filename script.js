@@ -28,13 +28,21 @@ const projects = [
   size: "large",
 
   media: [
+    { 
+      type: "image",
+      src: "assets/project-1-Echo/cover.jpg",
+      text: "Echo presented at UAL Spring Exhibition."
+    },
     { type: "youtube", 
       src: "https://www.youtube.com/embed/c95ddDC2qn0" 
+      text: "Demo by myself and my collaborator, Samir."
     },
     { type: "youtube", 
-      src: "https://www.youtube.com/embed/z2Jc7jUT0po" 
+      src: "https://www.youtube.com/embed/z2Jc7jUT0po"
+      text: "Backend of Echo, servos in motion." 
     },
-    { type: "image", src: "assets/project-1-Echo/image-1.jpg" 
+    { type: "image", src: "assets/project-1-Echo/image-1.jpg"
+      text: "Development process, sketching out the wiring and developing the forward mechanism." 
     }
   ]
 },
@@ -48,17 +56,18 @@ const projects = [
   {
     type: "image",
     src: "assets/project-2-Hermonograph/image-1.jpg",
-    text: "Live drawing generated through oscillatory motion."
-  },
-  {
-    type: "image",
-    src: "assets/project-2-Hermonograph/image-2.jpg",
-    text: "Live drawing generated through oscillatory motion."
+    text: "Birdeye view of harmonograph in action."
   },
   {
     type: "youtube",
     src: "https://www.youtube.com/embed/UzzjpWk_ju0",
-    text: "The harmonograph adapted to hold a natural willow branch."
+    text: "Live drawing generated through both oscillatory motion and natural affordance of the willow branch."
+    
+  },
+  {
+    type: "image",
+    src: "assets/project-2-Hermonograph/image-2.jpg",
+    text: "A final outcome."
   }
 ]
 },
@@ -109,18 +118,23 @@ const projects = [
     media: [
     { 
       type: "image", 
+      src: "assets/project-4-IconsMadeWithoutHands/cover.jpg",
+      text: "Satellite image of a car park"  
+    },
+    { 
+      type: "image", 
       src: "assets/project-4-IconsMadeWithoutHands/image-1.jpg",
-      text: ""  
+      text: "Unwarapped 3D scan of a cardboard box, the red tap, brown cardboard, green labelling."  
     },
     { 
       type: "image", 
       src: "assets/project-4-IconsMadeWithoutHands/image-2.jpg",
-      text: ""  
+      text: "An amalgamation of frames captured from an open source CCTV camera located in a Japanese Laundromat. Depicting an unassuming cusotomer collecting his washed clothes."  
     },
     { 
       type: "youtube", 
       src: "https://www.youtube.com/embed/E_h7W3oHJxc",
-      text: ""    
+      text: "Project video."    
       }
     ]
   },

@@ -321,14 +321,21 @@ body {
   }
 
   /* ---------- Contact (bottom anchor) ---------- */
-  .contact {
-    position: static;
-    order: 3;
+   .contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
     width: 100%;
-    transform: none;
-    padding: 16px;
+    padding: 14px 16px;
+
     margin: 0;
+    transform: none;
+
+    background: #fff;
     border: none;
+
+    z-index: 10;
   }
 
   /* ---------- Popup ---------- */
