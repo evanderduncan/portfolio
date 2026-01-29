@@ -74,33 +74,33 @@ const projects = [
 
   {
     title: "Tele-Gate",
-    description: "Thesis project.",
+    description: "My master’s thesis project, Tele-Gate, explores the possibility of using data as a sculptural material in order to ask what contemporary art can be when it is fully embedded in the present moment. Rather than treating data as abstract information or visual content, the project approaches it as something intrinsically embedded in human life, equality alive, maluable, and operative. The sculpture frames data as a force that increasingly dictates how we move, communicate, and are perceived. Data travels between sites, activates materials, and reveals the interpretive operations of sensing systems. In this context, telepresence, computation, and machine perception converge into an aesthetic of remote behaviour. Tele-Gate situates itself within this lineage by shifting attention away from poetic or atmospheric phenomena toward the banal mechanics of everyday architecture: the opening and closing of a park gate. A sensing device attached to the underside of a real park gate collectes a constant stream of angle, acceleration, and sound data. This real, unassuming data is then replacted in a gallery space - embodying qualities of data that often get overlooked. The recreation of this park park gate data treats the act of measurement itself as a sculptural event. Telepresence is reframed not as spectacle but as a quiet encounter with the politics of contemporary sensing: surveillance, infrastructural opacity, and the subtle extraction of behavioural data embedded in daily life.",
     details: "Gate: Plywood, Linear Actuator, Arduino, Micro SD Card Reader, MDFPlayer, Speaker. Sensor: ",
     cover: "assets/project-3-TeleGate/cover.jpg",
     media: [
     { 
       type: "image", 
       src: "assets/project-3-TeleGate/image-3.png",
-      text: "" 
-    },
-    { 
-      type: "image", 
-      src: "assets/project-3-TeleGate/image-5.png",
-      text: ""  
-    },
-    { 
-      type: "image", 
-      src: "assets/project-3-TeleGate/image-2.png",
-      text: ""  
+      text: "Diagram of the relationship between the real gate and the Tele-Gate." 
     },
     { 
       type: "image", 
       src: "assets/project-3-TeleGate/image-5.jpg",
       text: ""  
     },
+    { 
+      type: "image", 
+      src: "assets/project-3-TeleGate/image-2.png",
+      text: "The sensing device, fitted with accelerometer, microphone, SD card reader, battery, button interface for setup. This sensing device was encased and attached to the uderside of the real gate."  
+    },
+    { 
+      type: "image", 
+      src: "assets/project-3-TeleGate/image-5.jpg",
+      text: "Diagram of the real gate location in relation to the exhibition space."  
+    },
     { type: "image", 
       src: "assets/project-3-TeleGate/image-1.jpg",
-      text: ""  
+      text: "Arduino Mega, along with the SD card reader, potentiometer volume control, and linear actuator atteched to the Tele-Gate."  
     },
     { 
       type: "youtube", 
@@ -141,7 +141,7 @@ const projects = [
 
   {
     title: "MDF_Bark",
-    description: "Laser etching of tree bark onto MDF.",
+    description: "Laser etching of tree bark onto MDF. A study into the",
     details: "Lasercutter, MDF board",
     cover: "assets/project-5-MDFBark/cover.jpg",
     size: "small",
@@ -154,8 +154,14 @@ const projects = [
     cover: "assets/project-6-PlusFilter/cover.jpg",
     size: "large",
     media: [
-      { type: "image", src: "assets/project-6-PlusFilter/image-1.jpg" },
-      { type: "image", src: "assets/project-6-PlusFilter/image-2.jpg" }
+      { type: "image", 
+        src: "assets/project-6-PlusFilter/image-1.jpg",
+        text: "A seen of Abderdeenshire with gradual experiments with my Plus filter" 
+      },
+      { type: "image", 
+        src: "assets/project-6-PlusFilter/image-2.jpg",
+        text: "Road markings, size and locations of + symbols are clearly dictated by the pixel colour value of the original digital image." 
+      }
     ]
   },
   {
@@ -163,10 +169,16 @@ const projects = [
     description: "Live Piano works through a presourced public database such as weather or sealevel, the varying data values drive according motors, activating the piano hammers that make contact with a row of piazo sensors -each with their own assigned chord. The sound generated from the Live Piano is a direct audio representation of data.",
     cover: "assets/project-7-Piano/cover.jpg",
     media: [
-      { type: "image", src: "assets/project-7-Piano/image-1.jpg" },
-      { type: "image", src: "assets/project-7-Piano/image-2.jpg" },
+      { type: "image", 
+        src: "assets/project-7-Piano/image-1.jpg",
+        /*text: "" */
+        },
+      { type: "image", 
+        src: "assets/project-7-Piano/image-2.jpg",
+        text: "Visual schematic" 
+      },
       { type: "youtube", 
-        src: "https://www.youtube.com/embed/ac99THNZ8Is " 
+        src: "https://www.youtube.com/embed/ac99THNZ8Is" 
       }]
   },
   {
@@ -174,8 +186,11 @@ const projects = [
     description: "Stylised forms generated through randomising grids and softening effects. Born from my background in Interaction Design, and interest in UX as an artistic medium as opposed to consumer product. A series of digital interface sketches led to an interest in abstracting the practical forms of wireframing.",
     cover: "assets/project-10-Wireframes/cover.jpg",
     media: [
-      { type: "image", src: "assets/project-10-Wireframes/image-1.jpg" },
-      { type: "image", src: "assets/project-10-Wireframes/image-2.jpg" },
+      { type: "image", 
+        src: "assets/project-10-Wireframes/image-1.jpg",
+        text: "" 
+      },
+      { type: "image", src: "assets/project-10-Wireframes/image-2.png" },
       { type: "image", src: "assets/project-10-Wireframes/image-3.jpg" },
       { type: "image", src: "assets/project-10-Wireframes/image-4.jpg" },
       { type: "image", src: "assets/project-10-Wireframes/image-5.jpg" }
@@ -186,7 +201,10 @@ const projects = [
     description: "An exploration into computational mixed media study, a process that takes a digital recorded humam wave, and through a series of softwares, developed the recorded motion into a 3D printed sculpture.",
     cover: "assets/project-8-3DWave/cover.png",
     media: [
-      { type: "image", src: "assets/project-8-3DWave/image-1.jpg" },
+      { type: "image", 
+        src: "assets/project-8-3DWave/image-1.jpg", 
+        text: ""
+      },
       { type: "image", src: "assets/project-8-3DWave/image-2.jpg" },
       { type: "image", src: "assets/project-8-3DWave/3dwavephysical.png" },
       { 
