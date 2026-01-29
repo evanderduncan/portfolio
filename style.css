@@ -105,7 +105,8 @@ body {
   display: flex;
   align-items: flex-end; /* align items to the same bottom edge*/
   gap: 20px; /* images packed together */
-  width: max-content;
+  width: fit-content; /* fireforx + chrome */
+  white-space: nowrap; /* Safari stability */ 
   animation: marquee 40s linear infinite;
   padding: 0 24px;
 }
