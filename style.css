@@ -273,6 +273,7 @@ body {
     display: block;
     padding: 16px;
     order: 1;
+    border:none;
   }
 
   .left {
@@ -292,7 +293,7 @@ body {
   .reel-wrapper {
     position: static;
     order: 2;
-    margin: 32px 0;
+    margin: 16px 0;
     overflow-x: auto;
   }
 
@@ -325,9 +326,9 @@ body {
     order: 3;
     width: 100%;
     transform: none;
-    padding: 24px 16px;
-    margin-top: 48px;
-    border-top: 1px solid #ddd;
+    padding: 16px;
+    margin: 0;
+    border: none;
   }
 
   /* ---------- Popup ---------- */
