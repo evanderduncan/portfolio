@@ -141,12 +141,13 @@ const projects = [
 
   {
     title: "MDF_Bark",
-    description: "Laser etching of tree bark onto MDF. A study into the",
-    details: "Lasercutter, MDF board",
+    description: "Study of material and texture. Juxtaposition of natural bark pattern laser engraved onto artificial fibreboard, wood substitute. Future intention to create a series of different species of tree bark for practical implementation such as kitchen cupboards.",
+    details: "Lasercutter, Illustrator, MDF board",
     cover: "assets/project-5-MDFBark/cover.jpg",
     size: "small",
     media: [{ type: "image", src: "assets/project-5-MDFBark/image-1.jpg" }]
   },
+
   {
     title: "Plus",
     description: "Plus is an image filter that processes digital images and converts them into a collage of plus shapes. The size and offset of each plus is determined by the pixel colour values of the original image. The outcome is an abstracted, topographic representation of a digital photograph’s data. ",
@@ -164,6 +165,7 @@ const projects = [
       }
     ]
   },
+
   {
     title: "Live Piano",
     description: "Live Piano works through a presourced public database such as weather or sealevel, the varying data values drive according motors, activating the piano hammers that make contact with a row of piazo sensors -each with their own assigned chord. The sound generated from the Live Piano is a direct audio representation of data.",
@@ -184,13 +186,14 @@ const projects = [
   {
     title: "Wireframe",
     description: "Stylised forms generated through randomising grids and softening effects. Born from my background in Interaction Design, and interest in UX as an artistic medium as opposed to consumer product. A series of digital interface sketches led to an interest in abstracting the practical forms of wireframing.",
+    details: "TouchDesigner",
     cover: "assets/project-10-Wireframes/cover.jpg",
     media: [
       { type: "image", 
         src: "assets/project-10-Wireframes/image-1.jpg",
-        text: "" 
+        text: "TouchDesigner patch." 
       },
-      { type: "image", src: "assets/project-10-Wireframes/image-2.png" },
+      { type: "image", src: "assets/project-10-Wireframes/image-2.png", text: "YouTube interface sketch." },
       { type: "image", src: "assets/project-10-Wireframes/image-3.jpg" },
       { type: "image", src: "assets/project-10-Wireframes/image-4.jpg" },
       { type: "image", src: "assets/project-10-Wireframes/image-5.jpg" }
@@ -199,17 +202,18 @@ const projects = [
   {
     title: "3D Wave",
     description: "An exploration into computational mixed media study, a process that takes a digital recorded humam wave, and through a series of softwares, developed the recorded motion into a 3D printed sculpture.",
+    details: "Webcam, Blender, Illustrator, 3D printer, JavaScript.",
     cover: "assets/project-8-3DWave/cover.png",
     media: [
-      { type: "image", 
-        src: "assets/project-8-3DWave/image-1.jpg", 
-        text: ""
+      { type: "youtube", 
+        src: "ahttps://www.youtube.com/embed/Dq9Z2Rh9Zhs", 
+        text: "Concept began with a media experiment, loading a video file and with every frame increase the 'x' and 'y' coordinates by 1. The result is a prism effect and led me to the idea of 3D film"
       },
-      { type: "image", src: "assets/project-8-3DWave/image-2.jpg" },
-      { type: "image", src: "assets/project-8-3DWave/3dwavephysical.png" },
+      { type: "image", src: "assets/project-8-3DWave/image-2.jpg", text: "Process of 3D Wave, from video file to vectorising frames, Blender arrangement of outline vectors, and finally a 3D printed outcome." },
+      { type: "image", src: "assets/project-8-3DWave/3dwavephysical.png", text: "Final outcome"},
       { 
         type: "youtube",  
-        src: "https://www.youtube.com/embed/qjEpmbi9M1Y"}
+        src: "https://www.youtube.com/embed/qjEpmbi9M1Y", text:"3D render"}
     ]
   },
   {
