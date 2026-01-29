@@ -102,13 +102,15 @@ body {
 }
 
 .reel {
-  display: flex;
-  align-items: flex-end; /* align items to the same bottom edge*/
-  gap: 20px; /* images packed together */
-  width: fit-content; /* fireforx + chrome */
-  white-space: nowrap; /* Safari stability */ 
-  animation: marquee 40s linear infinite;
-  padding: 0 24px;
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 20px;
+  white-space: nowrap;
+
+  will-change: transform;
+  transform: translateZ(0);
+
+  animation: marquee 50s linear infinite;
 }
 
 .reel.paused {
