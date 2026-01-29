@@ -117,14 +117,11 @@ body {
   animation-play-state: paused;
 }
 
-.reel-item {
-  flex: 0 0 auto;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* push image + title to bottom */
-
-  /*outline: 1px solid red;*/
+.reel-item img {
+  height: 180px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .reel-item.size-small { width: 110px; }
