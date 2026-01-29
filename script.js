@@ -74,7 +74,7 @@ const projects = [
 
   {
     title: "Tele-Gate",
-    description: "My master’s thesis project, Tele-Gate, explores the possibility of using data as a sculptural material in order to ask what contemporary art can be when it is fully embedded in our modern, digital landscape. Using a motion sensor attached under a public park gate, the recorded data is embodied and replicated through a 1:1 replica Tele-Gate. The recreation of this park park gate data treats the act of generating data as a sculptural event. Telepresence is reframed not as spectacle but as a quiet encounter with the politics of contemporary sensing: surveillance, infrastructural opacity, and the subtle extraction of behavioural data embedded in daily life.",
+    description: "My master’s thesis project, Tele-Gate, explores the possibility of using data as a sculptural material in order to ask what contemporary art can be when it is fully embedded in our modern, digital landscape. Using a motion sensor attached under a public park gate, the recorded data is embodied and replicated through a 1:1 replica Tele-Gate. The recreation of 'real-time' park gate data treats the act of generating data as a sculptural event. Telepresence is reframed not as spectacle but as a quiet encounter with the politics of contemporary sensing: surveillance, infrastructural opacity, and the subtle extraction of behavioural data embedded in daily life.",
     details: "Gate: Plywood, Linear Actuator, Arduino, Micro SD Card Reader, MDFPlayer, Speaker. Sensor: ",
     cover: "assets/project-3-TeleGate/cover.jpg",
     media: [
