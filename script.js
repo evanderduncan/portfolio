@@ -34,11 +34,11 @@ const projects = [
       text: "Echo presented at UAL Spring Exhibition."
     },
     { type: "youtube", 
-      src: "https://www.youtube.com/embed/c95ddDC2qn0" 
+      src: "https://www.youtube.com/embed/c95ddDC2qn0", 
       text: "Demo by myself and my collaborator, Samir."
     },
     { type: "youtube", 
-      src: "https://www.youtube.com/embed/z2Jc7jUT0po"
+      src: "https://www.youtube.com/embed/z2Jc7jUT0po",
       text: "Backend of Echo, servos in motion." 
     },
     { type: "image", src: "assets/project-1-Echo/image-1.jpg"
