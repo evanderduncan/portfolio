@@ -118,19 +118,9 @@ body {
 }
 
 .reel-item img {
-  height: 180px;
-  width: auto;
+  height: 220px;      /* pick a visual size */
+  width: auto;        /* 🔑 prevents stretching */
   object-fit: contain;
-  display: block;
-}
-
-.reel-item.size-small { width: 110px; }
-.reel-item.size-medium { width: 140px; }
-.reel-item.size-large { width: 180px; }
-
-.reel-item img {
-  width: 100%;
-  max-height: 300px; /* preserve natural height */
   display: block;
 }
 
