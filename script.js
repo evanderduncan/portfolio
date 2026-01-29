@@ -166,7 +166,7 @@ const projects = [
       { type: "image", src: "assets/project-7-Piano/image-1.jpg" },
       { type: "image", src: "assets/project-7-Piano/image-2.jpg" },
       { type: "youtube", 
-        src: "https://www.youtube.com/embed/Ff0GKf3-MKo" 
+        src: "https://www.youtube.com/embed/ac99THNZ8Is " 
       }]
   },
   {
