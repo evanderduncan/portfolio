@@ -41,7 +41,7 @@ const projects = [
       src: "https://www.youtube.com/embed/z2Jc7jUT0po",
       text: "Backend of Echo, servos in motion." 
     },
-    { type: "image", src: "assets/project-1-Echo/image-1.jpg"
+    { type: "image", src: "assets/project-1-Echo/image-1.jpg",
       text: "Development process, sketching out the wiring and developing the forward mechanism." 
     }
   ]
