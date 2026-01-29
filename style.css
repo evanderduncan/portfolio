@@ -110,7 +110,7 @@ body {
   will-change: transform;
   transform: translateZ(0);
 
-  animation: marquee 50s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 
 .reel.paused {
