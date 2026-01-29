@@ -86,17 +86,12 @@ const projects = [
     { 
       type: "image", 
       src: "assets/project-3-TeleGate/image-5.jpg",
-      text: ""  
+      text: "Diagram of the real gate location in relation to the exhibition space."  
     },
     { 
       type: "image", 
       src: "assets/project-3-TeleGate/image-2.png",
       text: "The sensing device, fitted with accelerometer, microphone, SD card reader, battery, button interface for setup. This sensing device was encased and attached to the uderside of the real gate."  
-    },
-    { 
-      type: "image", 
-      src: "assets/project-3-TeleGate/image-5.jpg",
-      text: "Diagram of the real gate location in relation to the exhibition space."  
     },
     { type: "image", 
       src: "assets/project-3-TeleGate/image-1.jpg",
