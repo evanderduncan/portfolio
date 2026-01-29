@@ -196,12 +196,23 @@ const projects = [
   },
   {
     title: "CAPTCHR",
-    description: "Inspired by the WebArt scene and hyperlink storytelling, I developed CAPTCHR, my final year Bachelor project which explores the changing relationship between humans and computers.",
+    description: "Inspired by the WebArt scene and hyperlink storytelling, I developed CAPTCHR, a speculative interaction design which explores the changing relationship between humans and computers. Extending the ubiquitous CAPTCHA human verification format to question the increasing authority algorithms have in our lives.",
+    details: "HTML, CSS, JS, p5.js.",
     cover: "assets/project-9-CAPTCHR/cover.jpg",
     media: [
-      { type: "image", src: "assets/project-9-CAPTCHR/image-1.jpg" },
-      { type: "image", src: "assets/project-9-CAPTCHR/image-2.jpg" },
-      { type: "youtube", src: "https://www.youtube.com/embed/11IoP0gwpVc" }
+      { type: "image", 
+        src: "assets/project-9-CAPTCHR/image-1.jpg",
+        text: "Once all the CAPTCHRs have been completed, the user can download their personal 'human certificate' to access websites."
+       },
+        
+      { type: "image", 
+        src: "assets/project-9-CAPTCHR/image-2.jpg", 
+        text: "Movement CAPTCHR, the user is subjected to body recoginition software and required to move to computer generated patterns to complete."
+      },
+      { type: "youtube", 
+        src: "https://www.youtube.com/embed/11IoP0gwpVc", 
+        text: "Final project video, animation made on iDraw software detailing the CAPTCHR concept."
+      }
     ]
   }
 ];
