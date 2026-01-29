@@ -18,10 +18,10 @@ const projects = [
   {
   title: "Echo",
   description: 
-    "Echo is an interactive kinetic sculpture that explores self-observation and reflection through physical response. Using body-tracking and mechanical actuation, the work translates the viewer’s presence into a tactile, shifting surface.",
+    "Echo is an interactive kinetic sculpture that explores self-observation and reflection through physical response. Through a webcam and TouchDesigner, the participant’s form and movement is translated, in real time, across a 7×7 grid of servo motors controlled by Arduino. Each servo presses into a stretched fabric membrane, creating a physical impression that mirrors the viewer’s body. The work draws on the myth of Echo and Narcissus, reframing it through contemporary systems of self-representation such as surveillance, selfies, and feedback loops. While the interaction is playful, the delayed and imperfect reflection introduces a sense of unease, questioning the desire to recognise oneself through mediated images.",
 
   details: 
-    "The installation uses a webcam and TouchDesigner body-tracking to detect the participant’s form in real time. This data is translated into movement across a 7×7 grid of servo motors controlled by Arduino. Each servo presses into a stretched fabric membrane, creating a physical impression that mirrors the viewer’s body.\n\nThe work draws on the myth of Echo and Narcissus, reframing it through contemporary systems of self-representation such as surveillance, selfies, and feedback loops. While the interaction is playful, the delayed and imperfect reflection introduces a sense of unease, questioning the desire to recognise oneself through mediated images.",
+    "Plywood, fabric, glue, screws, hobby servos, Arduino, 16-Channel Servo Driver, webcam, TouchDesigner.",
 
   cover: "assets/project-1-Echo/cover.jpg",
 
